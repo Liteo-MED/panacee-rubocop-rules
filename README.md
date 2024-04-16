@@ -1,4 +1,4 @@
-# Panacee::Rubocop::Rails::Rules
+# Panacee::Rubocop::Rules
 
 Shared Rubocop configuration accross Panacée Rails projects.
 
