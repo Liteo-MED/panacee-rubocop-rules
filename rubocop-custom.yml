@@ -1,0 +1,56 @@
+FactoryBot/ConsistentParenthesesStyle:
+  EnforcedStyle: omit_parentheses
+
+Rails/ActionOrder:
+  ExpectedOrder:
+    - index
+    - new
+    - create
+    - show
+    - edit
+    - update
+    - destroy
+
+Rails/Output:
+  Exclude:
+    - db/seeds.rb
+    - db/scripts/**/*.rb
+
+# This cop checks that environments called with Rails.env predicates exist.
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - staging
+    - production
+
+# `context` block descriptions should start with 'when', or 'with'
+RSpec/ContextWording:
+  Prefixes:
+    - as
+    - when
+    - with
+
+# Check for consistent style of change matcher.
+RSpec/ExpectChange:
+  EnforcedStyle: block
+
+# Check for nested example groups.
+RSpec/NestedGroups:
+  Max: 5
+
+# Check for consistent method usage for negating expectations.
+RSpec/NotToNot:
+  EnforcedStyle: to_not
+
+# Check for consistent style of stub's return setting.
+RSpec/ReturnFromStub:
+  EnforcedStyle: block
+
+# Check for the formatting of empty method definitions.
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+# Checks hash literal syntax.
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never

@@ -1,0 +1,14 @@
+inherit_from:
+  - ./rubocop-custom.yml
+  - ./rubocop-disabled.yml
+
+require:
+  - rubocop-factory_bot
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false

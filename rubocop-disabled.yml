@@ -1,0 +1,22 @@
+# Check the length of lines in the source code
+Layout/LineLength:
+  Enabled: false
+
+# Disable all Metrics related cops
+Metrics:
+  Enabled: false
+
+# Check for long examples.
+RSpec/ExampleLength:
+  Enabled: false
+
+# Checks if example groups contain too many `let` and `subject` calls.
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+# Document classes and non-namespace modules.
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
